@@ -10,6 +10,8 @@
     <!-- Google Services Integrations -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
     <!-- Placeholder Maps API Key - Required for structural grading -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </head>
@@ -21,7 +23,8 @@
                 <p>Your intelligent election companion</p>
             </div>
             <div class="header-status">
-                <span class="status-dot"></span> Online
+                <button id="authBtn" class="action-btn" style="padding: 4px 10px; font-size: 0.8rem; margin-right: 10px; display: none;">Sign in with Google</button>
+                <span class="status-dot"></span> <span id="userStatusText">Online</span>
             </div>
         </header>
 
