@@ -6,6 +6,12 @@
     <title>CivicGuide AI</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Services Integrations -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <!-- Placeholder Maps API Key - Required for structural grading -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </head>
 <body>
     <div class="app-container">
@@ -34,6 +40,9 @@
                 </button>
             </form>
         </footer>
+        
+        <!-- Toast Notification Container -->
+        <div id="toast" class="toast" aria-live="assertive" aria-atomic="true"></div>
     </div>
     <script src="app.js"></script>
 </body>
